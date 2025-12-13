@@ -25,6 +25,7 @@ Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien,
    git clone https://github.com/Tim-Schlatter/GradeCalc.git
 
 2. Programm starten
+   ```
    python Main_programm.py
 
 3. Menüanweisung im Terminal folgen
