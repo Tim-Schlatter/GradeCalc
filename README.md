@@ -22,5 +22,10 @@ Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien,
 ## 🧑‍💻 Verwendung
 1. Lade das Repository herunter:
    ```bash
-   git clone https://github.com/DeinName/GradeCalc.git
-   cd GradeCalc
+   git clone https://github.com/Tim-Schlatter/GradeCalc.git
+
+2. Programm starten
+   python Main_programm.py
+
+3. Menüanweisung im Terminal folgen
+
