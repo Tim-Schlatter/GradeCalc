@@ -7,19 +7,32 @@ Ziel von GradeCalc ist es, Noten strukturiert zu erfassen, zu speichern und vers
 Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien, Fehlerbahandlung und Datenstrukturen.
 
 
-## 🚀 Hauptfunktionen 
-- Anmelden und Registrieren von Benutzer:innen
-- Verwalten von Modulen (hinzufügen / entfernen)
-- Berecnungn des Durchschnitts
-  - ohne Gewichtung
+## 🚀 Hauptfunktionen
+
+- **Benutzerverwaltung (Login / Registrierung)**  
+  Benutzer können sich registrieren und anmelden. Die Daten werden dauerhaft gespeichert.
+
+- **Modulverwaltung**  
+  Module können hinzugefügt und entfernt werden. Jedes Modul kann mehrere Noten enthalten.
+
+- **Notenverwaltung**  
+  Noten können zu Modulen hinzugefügt oder gelöscht werden.
+
+- **Durchschnitt berechnen**  
+  Berechnung des Notendurchschnitts eines Moduls:
+  - ohne Gewichtung  
   - mit Gewichtung
-- Notenberechnung anhand von Punkten
-- Umrechnung der Schweizer Notensakala in
-   - Deutshe Note
-   - USA Note
-- Speciherung der Daten in einer Datei
+
+- **Notenberechnung nach Punkten**  
+  Berechnet die Schulnote anhand der erreichten und maximal möglichen Punkte.
+
+- **Notenskala umrechnen**  
+  Umrechnung der Schweizer Notenskala in:
+  - Deutschland  
+  - USA
 
 ---
+
 
 ## 🗂 Projektstruktur
 
@@ -65,6 +78,9 @@ Dieses Projekt wurde als Gruppenarbeit im Modul **Grundlagen Programmierung (FHN
 - Tim Schlatter  
 - Irfan Mahmuti
 - Joselyn Cabrera
+
+
+
 
 
 
