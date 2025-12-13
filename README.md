@@ -33,6 +33,15 @@ Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien,
 
 ---
 
+### ➡️ Ablauf vom Startmenü zum Benutzer-Menü
+
+1. Nach dem Start des Programms erscheint das **Startmenü**.
+2. Der Benutzer kann wählen zwischen:
+   - **Anmelden** (für bestehende Benutzer)
+   - **Registrieren** (für neue Benutzer)
+3. Nach erfolgreicher Anmeldung oder Registrierung wird automatisch das **Benutzer-Menü** geöffnet.
+4. Im Benutzer-Menü können Module und Noten verwaltet sowie Berechnungen durchgeführt werden.
+
 
 ## 🗂 Projektstruktur
 
