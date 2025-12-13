@@ -1,5 +1,5 @@
 # GradeCalc
-GradeCalc ist ein interaktives Konsolenprogramm zur Verwaltung und Berechnung von Schul- und Modulnoten\<br>
+GradeCalc ist ein interaktives Konsolenprogramm zur Verwaltung und Berechnung von Schul- und Modulnoten\*innen<br>
 Ein Python-Projekt der FHNW (Modul Grundlagen Programmierung)
 
 ## 🎯 Ziel des Projektes
