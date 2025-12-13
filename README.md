@@ -58,5 +58,13 @@ GradeCalc/
 3. Menüanweisung im Terminal folgen
 
 
+## 👥 Projektteam
+
+Dieses Projekt wurde als Gruppenarbeit im Modul **Grundlagen Programmierung (FHNW)** erstellt.
+
+- Tim Schlatter  
+- Irfan Mahmuti
+- Joselyn Cabrera
+
 
 
