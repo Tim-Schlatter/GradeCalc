@@ -70,14 +70,24 @@ GradeCalc/
 
 3. Menüanweisung im Terminal folgen
 
-### ➡️ Ablauf vom Startmenü zum Benutzer-Menü
+## ➡️ Ablauf vom Startmenü zum Benutzer-Menü
 
-1. Nach dem Start des Programms erscheint das **Startmenü**.
-2. Der Benutzer kann wählen zwischen:
+1. Nach dem Start des Programms erscheint das Startmenü.
+
+2. Im Startmenü kann der Benutzer auch ohne Registrierung die Hauptfunktionen des Programms verwenden.  
+   Ausgenommen ist dabei das Verwalten von Modulen, welches nur registrierten Benutzern zur Verfügung steht.
+
+3. Im Startmenü kann der Benutzer wählen zwischen:
    - **Anmelden** (für bestehende Benutzer)
    - **Registrieren** (für neue Benutzer)
-3. Nach erfolgreicher Anmeldung oder Registrierung wird automatisch das **Benutzer-Menü** geöffnet.
-4. Im Benutzer-Menü können Module und Noten verwaltet sowie Berechnungen durchgeführt werden.
+
+4. Nach erfolgreicher Anmeldung oder Registrierung wird automatisch das Benutzer-Menü geöffnet.
+
+5. Im Benutzer-Menü stehen alle Funktionen vollständig zur Verfügung, inklusive:
+   - Hinzufügen und Entfernen von Modulen  
+   - Verwalten von Noten  
+   - Durchführen von Berechnungen (z. B. Notendurchschnitt)
+
 
 
 ## 👥 Projektteam
