@@ -96,7 +96,7 @@ Dieses Projekt wurde als Gruppenarbeit im Modul **Grundlagen Programmierung (FHN
 
 - Tim Schlatter  
 - Irfan Mahmuti
-- Joselyn Cabrera
+- Josselyn Cabrera
 
 
 
