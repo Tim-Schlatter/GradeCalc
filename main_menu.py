@@ -2,9 +2,9 @@ from ANSI import Farben, Stil, farbig_center, clear
 from durchschnitt_berechnen import durchschnitt_berechnen
 from notenberechnung import notenberechnung
 from notenskala import notenskala
-from Anmelden import anmelden
+from anmelden import anmelden
 import sys
-
+# Sys ist ein Standardmodul von Python. Gibt Zugriff auf das Pyhton-System selbst. Wird benötigt, um das Programm zu beenden. 
 
 
 def main_menu():
@@ -19,23 +19,22 @@ def main_menu():
     print("5) Beenden! \n")
     
     # Schleife für die Auswahl der Funktionen. Wiederholt sich bei fehlerhaften Eingabe.
-    # Return beendet die Funktion. 
     while True: 
         try:
             function = int(input("Welche Funktion willst du ausführen? "))
             if function >=1 and function <6:
                 if function == 1:
-                    durchschnitt_berechnen(0,0)
-                    return
+                    durchschnitt_berechnen(0,0) # Wir übergeben hier die Paramter 0,0, weil wir nicht angemeldet sind. Sie dienen als Platzhalter
+                    
                 if function == 2:
                     notenberechnung(0,0)
-                    return
+                    
                 if function == 3: 
                     notenskala(0,0)
-                    return
+                    
                 if function == 4:
                     anmelden()
-                    return
+                    
                 if function == 5:
                     print("Programm beendet!\n")
                     sys.exit() # Beendet das aktuell laufende Python-Programm sofort(Kein weiterer Codes wird ausgeführt). 

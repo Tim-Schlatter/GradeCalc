@@ -1,18 +1,26 @@
 from ANSI import Farben, Stil, farbig_center, clear
 
 def notenskala(user,pw):
-
+    """
+    Funktion für das Umrechnen einer Note in eine andere Notenskala
+    Umrechnen in DE-Note und USA-Note von CH-Note aus möglich
+    Parameter sind für die Anmeldung nötig. 
+    """
     def deutschland(user,pw):
-        note = (6.67 - ch_note) / 0.67
+        """
+        Funktion für das Umrechnen von CH-Note in die Notenskala von Deutschland
+        """
+        note = (6.67 - ch_note) / 0.67 # Funktion für das Umrechnen in die deutsche Notenskala 
         print(f"\nCH-Note: {ch_note:.2f}")
         print(f"DE-Note: {note:.2f}")
+
         while True:
             try:
 
                 zurück = input("Zurück zum Hauptmenü? (j/n): ").lower()
                 if zurück == "j":
-                    from Main_programm import main_menu
-                    from User_menu import user_menu
+                    from main_menu import main_menu
+                    from user_menu import user_menu
                     if user == 0 and pw == 0:
                         main_menu()
                         return
@@ -29,16 +37,19 @@ def notenskala(user,pw):
                 print(f"{Farben.H_ROT}Ungültige Eingabe: Bitte (j/n) eingeben{Farben.RESET}")
 
     def usa(user,pw):
-        gpa = 0.8 * ch_note - 0.8
-        print(f"\nCH-Note: {ch_note:.0f}")
+        """
+        Funktion für das Umrechnen von CH-Note in die Notenskala von der USA
+        """
+        gpa = 0.8 * ch_note - 0.8 # Funktion für das Umrechnen in die Notenskala der USA 
+        print(f"\nCH-Note: {ch_note:.2f}")
         print(f"US-Note: {gpa:.2f}")
         while True:
             try:
 
                 zurück = input("Zurück zum Hauptmenü? (j/n): ").lower()
                 if zurück == "j":
-                    from Main_programm import main_menu
-                    from User_menu import user_menu
+                    from main_menu import main_menu
+                    from user_menu import user_menu
                     if user == 0 and pw == 0:
                         main_menu()
                         return

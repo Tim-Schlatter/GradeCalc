@@ -2,7 +2,14 @@ import re
 import os
 
 class Farben:
-    """Auswahl an Farben: Farben.(Gewünschte Farbe)"""
+    """    
+    Enthält ANSI-Farbcodes zur farbigen Darstellung von Text im Terminal.
+
+    Die Farben können über Farben.<FARBE> verwendet werden,
+    z.B. Farben.ROT oder Farben.H_GRUEN.
+    """
+
+    # Standardfarben
     SCHWARZ = "\033[30m"
     ROT = "\033[31m"
     GRUEN = "\033[32m"
@@ -12,6 +19,7 @@ class Farben:
     CYAN = "\033[36m"
     WEISS = "\033[37m"
 
+    # Helle Farben
     H_SCHWARZ = "\033[90m"
     H_ROT = "\033[91m"
     H_GRUEN = "\033[92m"
@@ -21,10 +29,16 @@ class Farben:
     H_CYAN = "\033[96m"
     H_WEISS = "\033[97m"
 
+    # Setzt alle Farben zurück
     RESET = "\033[0m"
 
 class Stil:
-    """Auswahl an Stillmittel: Still.(Gewünschter Still)"""
+    """    
+    Enthält ANSI-Stilcodes zur Formatierung von Text im Terminal.
+
+    Die Stile können über Stil.<STIL> verwendet werden,
+    z.B. Stil.FETT oder Stil.UNTERSTRICHEN.
+    """
     FETT = "\033[1m"
     KURSIV = "\033[3m"
     UNTERSTRICHEN = "\033[4m"
@@ -33,11 +47,35 @@ class Stil:
     RESET = "\033[0m" # Wird benutzt, um die Farben und den Still zurückzusetzen! 
 
 def farbig_center(text: str, width: int = 50) -> str:
-    """Zentriert den Text in der () nach farbig_center"""
+    """    
+    Zentriert einen Text im Terminal unter Berücksichtigung von ANSI-Farbcodes.
+
+    Da ANSI-Farbcodes die Textlänge verfälschen würden, werden diese vor
+    der Berechnung der Einrückung entfernt.
+
+    Parameter:
+        text (str): Der anzuzeigende Text (inkl. ANSI-Farbcodes).
+        width (int): Die gewünschte Gesamtbreite der Ausgabe.
+
+    Rückgabewert:
+        str: Zentrierter Text inklusive originaler Farbcodes.
+    """
+    # Entfernt ANSI-Farbcodes, um die echte Textlänge zu berechnen
     sichtbarer_text = re.sub(r"\033\[[0-9;]*m", "", text)
+
+    # Berechnung des benötigten Abstands zur Zentrierung
     padding = max((width - len(sichtbarer_text)) // 2, 0)
+
+    # Rückgabe des zentrierten Textes mit originalen Farbcodes
     return " " * padding + text
 
 def clear():
-    """Reinigt das Terminal, sodass nichts mehr drin steht. Für die Übersicht gedacht."""
+    """    
+    Leert das Terminalfenster.
+
+    Unter Windows wird der Befehl 'cls' verwendet,
+    unter Linux/macOS der Befehl 'clear'.
+    """
+
+    # Betriebssystemabhängiger Clear-Befehl
     os.system("cls" if os.name == "nt" else "clear")
