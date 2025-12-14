@@ -56,7 +56,7 @@ GradeCalc/
 │
 ├── README.md                        # Projektdokumentation
 ├── Notes.md                         # Ideen und mögliche Erweiterungen
-└── GradeCalc.pdf                    # Finale Dokumentation / Abgabe
+└── GradeCalc.pdf                    # PowerPoint für Präsentation 
 
 ```
 
