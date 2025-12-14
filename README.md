@@ -38,25 +38,26 @@ Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien,
 
 ```text
 GradeCalc/
+├── Main_programm.py                 # Startpunkt des Programms (Hauptmenü)
+├── User_menu.py                     # Menü für angemeldete Benutzer:innen
+├── Anmelden.py                      # Login und Registrierung
+├── ANSI.py                          # Farben und Textformatierung (UI)
 │
-├── Main_programm.py                # Startpunkt des Programms (Hauptmenü)
-├── User_menu.py                    # Menü für angemeldete Benutzer:innen
-├── Anmelden.py                     # Login und Registrierung
-├── ANSI.py                         # Farben und Textformatierung (UI)
+├── Deine_Module.py                  # Anzeige und Verwaltung der Module
+├── Modul_hinzufügen_entfernen.py    # Module hinzufügen / löschen
+├── Noten_hinzufügen_entfernen.py    # Noten hinzufügen / löschen
 │
-├── Deine_Module.py                 # Anzeige und Verwaltung der Module
-├── Modul_hinzufügen_entfernen.py   # Module hinzufügen / löschen
-├── Noten_hinzufügen_entfernen.py   # Noten hinzufügen / löschen
-│
-├── durchschnitt_berechnen.py       # Durchschnittsberechnung
-├── notenberechnung.py              # Berechnung der Note anhand von Punkten
-├── notenskala.py                   # Umrechnung von Notenskalen
+├── durchschnitt_berechnen.py        # Durchschnittsberechnung
+├── notenberechnung.py               # Berechnung der Note anhand von Punkten
+├── notenskala.py                    # Umrechnung von Notenskalen
 │
 ├── Datenbanken/
-│   └── GradeCalc.json              # Speicherung der Benutzerdaten
+│   └── GradeCalc.json               # Speicherung der Benutzerdaten
 │
-├── README.md                       # Projektdokumentation
-└── Notes.md                        # Ideen und mögliche Erweiterungen
+├── README.md                        # Projektdokumentation
+├── Notes.md                         # Ideen und mögliche Erweiterungen
+└── GradeCalc.pdf                    # Finale Dokumentation / Abgabe
+
 ```
 
 ## 🧑‍💻 Verwendung
