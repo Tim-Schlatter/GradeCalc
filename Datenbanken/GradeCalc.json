@@ -2,7 +2,11 @@
     "tim": {
         "password": "passwort",
         "module_noten": {
-            "deutsch": []
+            "mathe": [
+                5.0,
+                3.0,
+                2.0
+            ]
         }
     }
 }

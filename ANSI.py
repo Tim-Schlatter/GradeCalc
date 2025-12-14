@@ -2,7 +2,7 @@ import re
 import os
 
 class Farben:
-    
+    """Auswahl an Farben: Farben.(Gewünschte Farbe)"""
     SCHWARZ = "\033[30m"
     ROT = "\033[31m"
     GRUEN = "\033[32m"
@@ -24,19 +24,20 @@ class Farben:
     RESET = "\033[0m"
 
 class Stil:
-    
+    """Auswahl an Stillmittel: Still.(Gewünschter Still)"""
     FETT = "\033[1m"
     KURSIV = "\033[3m"
     UNTERSTRICHEN = "\033[4m"
     BLINKEND = "\033[5m"
     INVERTIERT = "\033[7m"
-    RESET = "\033[0m"
+    RESET = "\033[0m" # Wird benutzt, um die Farben und den Still zurückzusetzen! 
 
 def farbig_center(text: str, width: int = 50) -> str:
- 
+    """Zentriert den Text in der () nach farbig_center"""
     sichtbarer_text = re.sub(r"\033\[[0-9;]*m", "", text)
     padding = max((width - len(sichtbarer_text)) // 2, 0)
     return " " * padding + text
 
 def clear():
+    """Reinigt das Terminal, sodass nichts mehr drin steht. Für die Übersicht gedacht."""
     os.system("cls" if os.name == "nt" else "clear")

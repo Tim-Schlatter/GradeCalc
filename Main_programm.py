@@ -8,7 +8,7 @@ import sys
 
 
 def main_menu():
-    
+    """Ruft das Hauptmenü ins Terminal. Funktionen 1-5"""
     print("="*50)
     print(farbig_center(f"{Stil.FETT}HAUPTMENÜ GradeCalc{Farben.RESET}", 50))
     print("="*50)
@@ -18,6 +18,8 @@ def main_menu():
     print("4) Anmelden / Registrieren ")
     print("5) Beenden! \n")
     
+    # Schleife für die Auswahl der Funktionen. Wiederholt sich bei fehlerhaften Eingabe.
+    # Return beendet die Funktion. 
     while True: 
         try:
             function = int(input("Welche Funktion willst du ausführen? "))
@@ -36,7 +38,7 @@ def main_menu():
                     return
                 if function == 5:
                     print("Programm beendet!\n")
-                    sys.exit()
+                    sys.exit() # Beendet das aktuell laufende Python-Programm sofort(Kein weiterer Codes wird ausgeführt). 
                     
             else:
                 print(f"\n{Farben.H_ROT}Ungültige Zahl: Gib eine Zahl zwischen 1-5 ein!{Farben.RESET}\n")
@@ -44,7 +46,7 @@ def main_menu():
             print(f"\n{Farben.H_ROT}Ungültige Eingabe: Gib eine Zahl zwischen 1-5 ein!{Farben.RESET}\n")
 
 
-
+# Sorgt dafür, dass das Programm nur dann startet, wenn die Datei direkt ausgeführt wird - nicht beim Importieren
 if __name__ == "__main__":
     main_menu()
 

@@ -53,6 +53,7 @@ def note_entfernen(username,passwort,modul):
         all_data = json.load(f)
     notenliste = all_data[username]["module_noten"][modul]
 
+
     while True:
         try:
             
