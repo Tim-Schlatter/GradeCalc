@@ -12,5 +12,5 @@
 -  ~~Anmelden ohne eine Datenbank führt zum Crash. FileNotFoundError~~
 -  ~~Noten löschen wenn keine vorhanden sind möglich.~~
 -  ~~Crash bei Deine_Module, weil int(wahl), obwohl wahl == "x" möglich sein kann~~
--  ~~Fehler bei Gewichtung bei Durchschnittberechnung ~~
+-  ~~Fehler bei Gewichtung bei Durchschnittberechnung~~
 -  
