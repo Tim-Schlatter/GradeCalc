@@ -38,14 +38,14 @@ Das Programm verbindet grundlegende Programmierkonzepte wie Funktionen, Dateien,
 
 ```text
 GradeCalc/
-├── Main_programm.py                 # Startpunkt des Programms (Hauptmenü)
-├── User_menu.py                     # Menü für angemeldete Benutzer:innen
-├── Anmelden.py                      # Login und Registrierung
+├── main_menu.py                     # Startpunkt des Programms (Hauptmenü)
+├── user_menu.py                     # Menü für angemeldete Benutzer:innen
+├── anmelden.py                      # Login und Registrierung
 ├── ANSI.py                          # Farben und Textformatierung (UI)
 │
-├── Deine_Module.py                  # Anzeige und Verwaltung der Module
-├── Modul_hinzufügen_entfernen.py    # Module hinzufügen / löschen
-├── Noten_hinzufügen_entfernen.py    # Noten hinzufügen / löschen
+├── deine_Module.py                  # Anzeige und Verwaltung der Module
+├── modul_hinzufügen_entfernen.py    # Module hinzufügen / löschen
+├── noten_hinzufügen_entfernen.py    # Noten hinzufügen / löschen
 │
 ├── durchschnitt_berechnen.py        # Durchschnittsberechnung
 ├── notenberechnung.py               # Berechnung der Note anhand von Punkten
@@ -67,7 +67,7 @@ GradeCalc/
 
 2. Programm starten
    ```
-   python Main_programm.py
+   python main_menu.py
 
 3. Menüanweisung im Terminal folgen
 
